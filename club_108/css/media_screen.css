@@ -1,0 +1,64 @@
+/* Feuille de styles pour média screen */
+
+/* mobile first */
+@media screen and (max-width: 550px){
+
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.button{
+		display: flex;
+		flex-direction: column;
+	}
+
+    .nav, .nav_main{
+    	display: flex;
+    	flex-direction: column;
+    	align-items: start;
+    }
+    
+	.grid_container{
+	display: grid;
+	/* grid-template-columns: minmax(65%, auto); */
+	/* grid-template-columns: 1fr 1fr; */
+	/* grid-template-rows: minmax(auto, auto); */
+	grid-gap: 1em 1em;
+	grid-template-areas: "un un un"
+						 "deux deux deux"
+						 "trois trois trois"
+						 "quatre quatre quatre"
+						 "cinq cinq cinq"
+						 ;
+    }
+
+    #second_container{
+    	display: flex;
+    	flex-direction: column;
+    }
+	
+	footer{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.footer{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+}
+
+@media screen and (min-width: 551px) and (max-width: 994px){
+
+	.footer{
+		display: grid; 
+		grid-template-columns: 1fr 1fr;
+	}
+	
+}
+
